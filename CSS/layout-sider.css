@@ -182,6 +182,7 @@ e=effekt (add-on's)
 }
 .box-eBorder{
     border-radius: 25px;
+    overflow: hidden;
 }
 
 /*TEKNOLOGIFORSTÅELSE*/
