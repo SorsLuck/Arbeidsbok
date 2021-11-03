@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Naturfag</title>
+<!--linke css filene-->
+    <link rel="stylesheet" href="CSS/layout-sider.css">
+</head>
+<body>
+    <div class="top-items">
+<!--hjem knap start-->        
+    <div class="hjem"><button class="buttonhjem" onclick=location.href="index.html"><picture>
+        <img src="Bilder/Hjem-ikon.png" alt="tilbake" style="width:50px;height:50px;"></picture>  
+    </div>
+<!--hjem knap slutt-->
+
+    <div><h1>Naturfag</h1></div>
+</div>    
+    <div class="line">
+        <div class="line"></div></div>    
+<div class="base-colum">
+    <div class="base-colum-1">
+        <div class="base-colum-1-top">
+<!--tilbake knap-->
+            <div class="in-colum-1-top-1"><button class="buttonback" onclick="goBack()"><picture>
+                <img src="Bilder/tilbake-pil3.png" alt="tilbake" style="width:25px;height:25px;"></picture></button>
+            </div>
+            <div class="in-colum-1-top-2"><h1>Arbeidsbøker</h1></div>
+         </div>
+<!--arbeidsbøker knaper-->  
+<div><button class="buttonbøker-v1" onclick=location.href="Index_programmering.html">
+    Konseptutv. og programmering</button></div>
+<div><button class="buttonbøker-v2" onclick=location.href="Index_prod._og_historiefortelling.html">
+    Prod. og historifortelling</button></div>
+<div><button class="buttonbøker-v1" onclick=location.href="Index_teknologiforstaelse.html">
+    Teknologiforståelse</button></div>
+<div><button class="buttonbøker-v1" onclick=location.href="Index_engelsk.html">
+    Engelsk</button></div>
+<div><button class="buttonbøker-v1" onclick=location.href="Index_naturfag.html">
+    Naturfag</button></div>
+<div><button class="buttonbøker-v1" onclick=location.href="Index_matte.html">
+    Matte</button></div>
+    </div>
+
+    <div class="base-colum-2">
+<!--content boxer, her er boxene som skal ha allt inholde på hvær side-->        
+        <div class="content-box-v1">
+
+        </div>
+        <div class="content-box-v2">
+
+        </div>
+       <div class="content-box-v1">
+
+    </div>    
+    </div>
+    <div class="base-colum-3">
+<!--ikon til siden-->
+        <picture>
+            <img class="side-image" src="Bilder/naturfag-ikon2.webp" alt="naturfag ikon"> <!--max width=270-->
+        </picture>
+        </div>
+</div>
+<div class="line">
+    <div class="line"></div></div>
+<!--koden til tilbake knapen-->
+<script>
+    function goBack() {
+      window.history.back();
+    }
+    </script>
+</body>
+</html>
