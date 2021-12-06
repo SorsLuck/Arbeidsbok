@@ -1,0 +1,276 @@
+/*dene css filen er layouten til sidene*/
+body{
+    background-color:rgb(220, 224, 194);
+  }
+/*hjemknap og side navnet*/
+.top-items{
+    display: grid;
+    text-align: center;
+    color: rgb(36, 87, 74);
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(auto, auto);
+    align-items: center;
+}
+.hjem{
+    justify-self: left;
+}
+.buttonhjem{
+    border: none;
+    background-color:rgb(220, 224, 194);
+    color: rgb(36, 87, 74);
+    transition-duration: 400ms;
+    cursor: pointer;
+}
+.buttonhjem:hover{
+    transition-duration: 400ms;
+    font-size: 40px;
+    background-color: rgb(221, 210, 178);
+}
+.line{
+    display: grid; 
+    grid-template-columns: repeat(1, auto);
+    grid-auto-rows: minmax(1px, 0px);
+    background-color: rgb(36, 87, 74);
+}
+/*slutten på top-items*/
+
+/*lager hoved boxene som allt står opp på*/
+.base-colum{
+    display: grid; 
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    text-align: left;
+    grid-gap: 1em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    overflow: hidden;
+}
+
+/*hoved boxen til høyere*/
+.base-colum-1{
+    display: grid;
+    background-color:rgb(221, 210, 178);
+    grid-column: 1;
+    color: rgb(36, 87, 74);
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: right;
+    box-shadow: 0 0px 4px 4px rgb(196, 186, 156);
+    grid-auto-rows:max-content;
+    overflow: hidden;
+}
+/*teksten arbeidsbøker(ikke kanpene) og tilbake knap*/
+.base-colum-1-top{
+    display: grid;
+    grid-template-columns: 2;
+    grid-auto-rows: minmax(auto, auto)
+}
+/*tilbake kanp fra her*/
+.in-colum-1-top-1{
+    grid-column: 1;
+    align-self: center;
+    text-align: center;
+}
+.buttonback{
+    border: none;
+    background-color: rgb(221, 210, 178);
+    color: rgb(36, 87, 74);
+    transition-duration: 400ms;
+    cursor: pointer;
+}
+.buttonback:hover{
+    transition-duration: 400ms;
+    font-size: 40px;
+    background-color:rgb(220, 224, 194);
+}
+/*tilbake knap til her*/
+
+/*teksten arbeidsbøker(ikke knapene)*/
+.in-colum-1-top-2{
+    grid-column: 2;
+}
+/*arbeidsbøker kanper fra her*/
+.buttonbøker-v1{
+    border: none;
+    background-color: rgb(221, 210, 178);
+    font-size: 3ch;
+    color: rgb(36, 87, 74);
+    padding-top: 1em;
+    padding-bottom: 6px;
+    text-align: left;
+    transition-duration: 500ms;
+    background: transparent;
+    cursor: pointer;
+    width: 17ch;
+    justify-self: right;
+    border-bottom: 1px solid rgb(36, 87, 74);
+}
+.buttonbøker-v1:hover{
+    transition-duration: 700ms;
+    font-size: 28px;
+    color: rgb(10, 56, 45);
+    width: 19ch;
+}
+
+/*arbeidsbøker til her*/
+
+/*hoved boxen i midten*/
+.base-colum-2{
+    display: grid;
+    background-color: rgb(219, 231, 216);
+    color: rgb(36, 87, 74);
+    grid-template-columns: 1fr 2fr;
+    padding: 2em;
+    box-shadow: 0 3px 7px 7px rgb(154, 161, 151);
+}
+.video {
+    width: 103ch;
+}
+.info-row{
+    display: grid;
+    grid-column: 1/2;
+    grid-template-rows: repeat(auto);
+    grid-auto-rows: minmax(auto, 200px);
+    grid-row-gap: 3em;    
+}
+.content-row{
+    display: grid;
+    margin-left: 1em;
+    grid-column: 2/3;
+    grid-template-rows: repeat(auto);
+    grid-auto-rows: minmax(232px, auto);
+    grid-row-gap: 1em;
+}
+/*hoved boxen til venstere*/
+.base-colum-3{
+    background-color:rgb(221, 210, 178);
+    grid-column: 3;
+    color: rgb(36, 87, 74);
+    padding: 1em;
+    place-items: center;
+    box-shadow: 0 0px 4px 4px rgb(196, 186, 156);
+}
+.side-image{
+    width: 100%;
+    border-radius: 25px;
+}
+/*<CONTENT>*/
+
+/* -LAYOUTS-
+v=version (multiple uses box design)
+c=custom (made for-one use)
+e=effekt (add-on's to boxes)
+*/
+
+.content-info-box-v1{
+    background-color:rgb(220, 224, 194);
+    grid-column: 1/3;
+    box-shadow: inset 0 0 10px rgb(167, 170, 147);
+    border-radius: 25px;
+    overflow: hidden;
+}
+.box-eFont{
+    font-size: 18px;
+    color: rgb(36, 87, 74);
+    padding: 1em;
+}
+.box-eBorder{
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.content-banner-v1{
+    display: grid;
+    overflow: hidden;
+    height: 200px;
+    align-content: center;
+    justify-content: center;
+    background-color:rgb(220, 224, 194);
+    grid-column: 1/6;
+    box-shadow: inset 0 0 10px rgb(167, 170, 147);
+    box-shadow: -1em -2em 0em 0em rgb(221, 210, 178);
+    border-radius: 25px;
+    margin: 2em 0em 0em 1em;
+    transition: 700ms;
+    transition-delay: 100ms;
+}
+.content-banner-v1:hover{
+    transition: 700ms;
+    margin: 0em 1em 2em 0em;
+    box-shadow: 0em 0em 0em 0em rgb(196, 186, 156);
+}
+.banner{
+    display: grid;
+}
+
+.image-banner{
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    filter: blur(3px);
+    transition: 700ms;
+    justify-self: center;
+    margin: 0;
+    transition-delay: 100ms;
+}
+.text-banner-v1{
+    z-index: 1;
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 130%;
+    text-align: center;
+    text-justify: center;
+    transition: 1.3s;
+    border: none;
+    font-family: 'Times New Roman';
+    background-color: transparent;
+    font-variant: small-caps;
+    font-weight: 700;
+    color: rgb(36, 87, 74);
+    text-shadow:0 0 15px rgb(245, 247, 233), 0 0 20px rgb(244, 247, 224), 0 0 25px rgb(244, 247, 224);
+    transition-delay: 100ms;
+    cursor: pointer;
+}
+.text-banner-v1:hover ~.image-banner{
+    filter: none;
+    transition: 700ms;
+    width: 120%;
+}
+.text-banner-v1:hover{
+    font-size: 199%;
+    transition: 1.3s;
+    color: rgb(10, 56, 45);
+    padding-bottom: 1em;
+}
+.info-box-headline{
+    font-size: x-large;
+    font-family: 'Times New Roman';
+    margin: 3%;
+}
+.info-box-text{
+    font-size: large;
+    font-family: 'Times New Roman';
+    margin: 3%;
+}
+/*The Social Dilemma Website*/
+.Illustrasjon-bilde{
+    padding-top: 3em;
+}
+.content-box-c2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.content-box-c3{
+    grid-row: 1/2;
+    border-radius: 25px;
+    background-image: url(../Bilder/Sunt-SM.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 370px 280px;
+    outline-style: dashed;
+    outline-color: rgb(36, 87, 74);
+}
